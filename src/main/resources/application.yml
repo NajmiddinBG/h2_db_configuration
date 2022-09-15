@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/data/demo
+    username: friday
+    password: 1113
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8881
